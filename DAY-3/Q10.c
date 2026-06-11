@@ -1,0 +1,20 @@
+#include<stdio.h>
+int main()
+{
+    int start,end,i,j;
+    printf(" enter the start =");
+    scanf("%d",&start);
+    printf("enter the end =");
+    scanf("%d",&end);
+    for (i =start;i<=end;i++)
+    { int count =0;
+        for (j=1;j<=i;j++)
+        {
+            if (i%j == 0)
+            count++;
+        }
+        if (count ==2)
+        printf("%d",i);
+    }
+    return 0;
+    }
